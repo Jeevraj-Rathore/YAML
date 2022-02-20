@@ -1,0 +1,55 @@
+# anything after : and space is known as variable
+# Variables can be of various data types
+# 1. Strings (3 ways)
+myself: Jeevraj Rathore
+fruits: "apple"
+job: 'swe'
+
+bio: 
+my name is Jeevraj Rathore.
+I am a nice person.
+
+# write a single line in multiple lines
+message: >
+Ths will
+all be
+in one single line
+
+# same as
+message: Ths will all be in one single line
+
+# 2. Integer type
+number: 5473
+
+# 3. Float
+marks: 98.23
+
+# 4. Boolean
+booleanValue: No # n, N, false, False, FALSE
+# smae for true -> y, Y, yes, Yes, YES
+
+# Specify the data type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalNum: !!int 06574
+hexa: !!int 0x45
+commaValue: !!int +540_000 #540,000
+exponential numbers: 6.023E56
+
+# Floatomg point numbers
+marks: !!float 56.89
+infinite: !!float .inf
+not a num: .nan
+
+# null
+surname: !!null Null # or NULL ~
+~: this ia a null key
+
+# Date and Time
+date: !!timestamp 2022-02-18
+# if no timezone is added it assumes UTC
+# data type for this is timestamp
+india time: 2001-12-15T02:59:43:10 +5:30
+not time zone: 2001-12-15T02:59:43:10
