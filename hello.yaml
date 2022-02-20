@@ -1,0 +1,35 @@
+# Different types of pairs
+
+# 1. Key value pair
+"apple" : "I am ared friut"
+1 : "This is Jeevraj's roll number"
+---
+# 2. Lists
+- apple
+- mango
+- banana
+- Apple
+# YAML is case sensitive so apple and Apple both are different things
+---
+# 3. Block style
+cities :
+ - new delhi
+ - mumbai
+ - gujrat
+ # Proper spaces are important in YAML otherwise it gonna give errors.
+ # Indentation is extremly important like in python
+
+ # Lets assume above 3 examples are different objects or documents
+ # How to tell YAML that?
+ # By using ---
+ # YAML is collection of 0 or more documents
+---
+ # 4. Flow Type
+ cities : [new delhi, mumbai, gujrat]
+---
+# 5. Key value pairs but in Different style
+{mango: "yellow friut", age: 56 }
+
+ # How to tell the document has ended
+ ...
+ # Convert the above code to json from onlineyamltools.com
